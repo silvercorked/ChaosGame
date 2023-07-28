@@ -6,7 +6,6 @@
 #include "Chaos.hpp"
 
 int main(int argc, char* argv[]) {
-    BYTE randSeed[16] = {0};
     std::random_device rd;
 
     std::mt19937 gen(rd());
