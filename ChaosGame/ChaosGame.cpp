@@ -10,8 +10,8 @@ int main(int argc, char* argv[]) {
 
     std::mt19937 gen(rd());
     Chaos c = Chaos(500, gen);
-    //c.generate(100 * 100);
-    c.run(9);
-    c.save("C:/Users/Alex/Desktop/chaosGameOutput.bmp");
+    //c.generate(1000000); // randomized
+    c.run(9); // deterministic
+    c.save("../chaosGameOutput.bmp");
     return 0;
 }
